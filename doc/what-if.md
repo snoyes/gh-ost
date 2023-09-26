@@ -14,7 +14,7 @@ Thus, the replica will transform the master's SBR binlogs into RBR binlogs. `gh-
 
 ### What if gh-ost crashes halfway through, or I kill it?
 
-Unlike trigger-based solutions, there's nothing urgent to clean up in the event `gh-ost` bails out or gets killed. There are the two tables creates by `gh-ost`:
+Unlike trigger-based solutions, there's nothing urgent to clean up in the event `gh-ost` bails out or gets killed. There are the two tables created by `gh-ost`:
 
 - The _ghost_ table: `_yourtablename_gho`
 - The _changelog_ table: `_yourtablename_ghc`
